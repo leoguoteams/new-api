@@ -49,7 +49,7 @@ const OtherSetting = () => {
     About: '',
     HomePageContent: '',
   });
-  let [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [statusState, statusDispatch] = useContext(StatusContext);
   const [updateData, setUpdateData] = useState({
