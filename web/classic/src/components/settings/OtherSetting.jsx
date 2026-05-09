@@ -322,7 +322,7 @@ const OtherSetting = () => {
     const res = await API.get('/api/option/');
     const { success, message, data } = res.data;
     if (success) {
-      let newInputs = {};
+      const newInputs = {};
       data.forEach((item) => {
         if (item.key in inputs) {
           newInputs[item.key] = item.value;
